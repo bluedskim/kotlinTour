@@ -1,3 +1,6 @@
+/**
+ * https://kotlinlang.org/docs/kotlin-tour-functions.html#return-from-a-function
+ */
 fun toSeconds(time: String): (Int) -> Int = when (time) {
     "hour" -> {value -> value * 60 * 60}
     "minute" -> {value -> value * 60}
