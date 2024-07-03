@@ -5,7 +5,7 @@ class RandomEmployeeGenerator(var minSalary:Int, var maxSalary:Int){
     fun generateEmployee(): Employee2 {
         val salary : Int = Random.nextInt(minSalary, maxSalary);
         val nameIdx : Int = Random.nextInt(0, names.size);
-        return Employee2(names[nameIdx], salary)
+        return Employee2(names.random(), salary)
     }
 
     val names = listOf("name1", "name2", "name3")
